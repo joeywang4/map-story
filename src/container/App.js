@@ -93,11 +93,11 @@ export default class App extends Component {
     updateStory = newStory => {
         console.log("Receive new story", newStory);
         this.allStories.unshift(newStory);
-        if(this.state.view === ALL) {
+        if(this.state.filter === ALL) {
             this.setState(state => {
                 state.stories = this.allStories;
                 return state;
-            })
+            });
         }
     }
 
