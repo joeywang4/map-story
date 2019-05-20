@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Playball');
+
+.Story {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    height: 87%;
+    width: 30%;
+    border: 2px #FFAC55 solid;
+    margin-left: 5px;
+    z-index: 1030;
+    background-color: rgba(255,255,255,0.1);
+}
+
+/*************
+* Filter bar *
+**************/
+
+.filterBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.filter {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 24px;
+}
+
+.filter-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+.filter-radio+.filter {
+    font-family: "Playball",sans-serif;
+    margin: 0;
+    border: solid 1px #AAA;
+    border-top-width: 0px;
+    background-color: #CCC;
+    opacity: 0.8;
+}
+
+.filter-radio:checked + .filter {
+    color: #e2b318;
+    background: #FFF;
+    border-bottom-width: 0px;
+    z-index: 1;
+}
+
+/********
+* Posts *
+*********/
+
+.post-container {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 45px);
+    background-color: rgba(240,240,240,0.9);
+    overflow-y: scroll;
+    justify-content: center;
+}
+
+.post {
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 95%;
+    margin: 0.5em auto;
+    padding: 1em 0.5em;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.post-header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5em;
+}
+
+.post-profile-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.post-name-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-name-time span {
+    color: rgb(30,30,30);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.post-alt-text {
+    display: table;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.post-alt-text span{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/********
+* Write *
+*********/
+
+.write-container {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240,240,240,0.9);
+    overflow-y: scroll;
+    justify-content: center;   
+}
+
+#write-input {
+    width: 99%;
+    resize: vertical;
+    font-size: 14px;
+}

@@ -1,0 +1,11 @@
+#home {
+    position: absolute;
+    left: 10px;
+    bottom: 80px;
+}
+
+#edit {
+    position: absolute;
+    left: 10px;
+    bottom: 120px;
+}

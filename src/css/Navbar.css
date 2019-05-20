@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.navbar-header {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    margin-left: 3%;
+}
+
+.navbar-header a {
+    text-decoration: none;
+    color: #f3bb03;
+}
+
+.navbar-default {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+    margin: auto;
+	background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-default {
+	color: #fff;
+	font-family: "Open Sans",sans-serif;
+	padding: 0px;
+}
+
+.navbar-default .nav li a {
+	font-family: "Open Sans",sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #444448;
+}
+.navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
+	color: #fed136;
+	outline: 0
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-item {
+    margin: 0em 1em 0em 1em;
+}
+
+.navbar-link {
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	border-radius: 0;
+	color: #fff;
+	background-color: #fed136
+}
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+	background-color: #fec503
+}
+
+.navbar-words {
+	font-family: "Open Sans",sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+    color: #444448;
+    margin-right: 2em;
+}
+
+@media (min-width:768px) {
+	.navbar-default
+	{
+		background-color: rgba(255, 255, 255, 0.95);
+		padding: 5px 0;
+		-webkit-transition:padding .3s;
+		-moz-transition:padding .3s;
+		transition:padding .3s;
+		border:0
+	}
+	.navbar-default .navbar-brand {
+		font-size: 2em;
+		-webkit-transition:all .3s;
+		-moz-transition:all .3s;
+		transition:all .3s;
+		margin-top: 10px;
+	    margin-left: 10px;
+	}
+	.navbar-default .navbar-nav>.active>a {
+		border-radius: 3px
+	}
+	.navbar-default.navbar-shrink {
+		background-color: #FFFFFF;
+		border-bottom: 1px solid #828282;
+		padding: 5px 0;
+	}
+	.navbar-default.navbar-shrink .navbar-brand {
+		font-size: 1.5em;
+		margin-top: 10px;
+	}
+}
+
+.navbar-blank {
+    height: 60px;
+    width: 100%;
+    background-color: white;
+}

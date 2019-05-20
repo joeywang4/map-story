@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Playball');
+
+.Login {
+    position: absolute;
+    top: 70px;
+    left: 35%;
+    height: 70%;
+    width: 30%;
+    border: 2px #FFAC55 solid;
+    margin-left: 5px;
+    z-index: 1030;
+    background-color: rgba(255,255,255,0.1);
+}
+
+/*************
+* Filter bar *
+**************/
+
+.filterBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.switch-link {
+    width:100%;
+    text-decoration: none;
+    color: black;
+    border: solid 1px #AAA;
+    background-color: #CCC;
+    text-align: center;
+}
+
+.switch {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 24px;
+}
+
+.switch-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+.switch-radio+.switch {
+    font-family: "Playball",sans-serif;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.switch-link .switch-radio:checked+.switch {
+    color: #e2b318;
+    z-index: 1;
+}
+
+.switch-link .switch-radio:checked{
+    background-color: white;
+}
+
+/*********
+* Window *
+**********/
+
+.window-container {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 45px);
+    background-color: white;
+    overflow-y: scroll;
+    justify-content: center;
+}
+
+.window {
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 95%;
+    margin: 0.5em auto;
+    padding: 1em 0.5em;
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.window .Title {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.window form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.window .send-btn {
+    position: absolute;
+    bottom: 2em;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(194, 152, 13);
+    width: 95%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.err-msg {
+    color: red;
+    margin-left: 0.5em;
+    font-style: italic;
+}
