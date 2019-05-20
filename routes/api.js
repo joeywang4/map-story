@@ -29,6 +29,7 @@ router.post('/post', (req, res) => {
                     if(err) console.error(err);
                     data.author = _user;
                     req.app.io.emit('update', data);
+                    console.log("Emitted new post!")
                 })
             }
         })

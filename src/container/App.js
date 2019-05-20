@@ -60,7 +60,6 @@ export default class App extends Component {
         .catch(err => console.error(err));
 
         if(socket !== undefined) console.log("Connected to sockets!");
-        socket.on('update', this.updateStory)
     }
 
     goHome = (e) => {this.map.current.goHome();}
@@ -100,6 +99,10 @@ export default class App extends Component {
                 return state;
             })
         }
+    }
+
+    componentDidMount() {
+        socket.on('update', this.updateStory)
     }
 
     render() {
