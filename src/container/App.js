@@ -9,7 +9,7 @@ import ControlButtons from "../component/ControlButtons";
 import Navbar from "../component/Navbar";
 import "../css/App.css";
 
-const socket = io.connect("http://localhost:3000");
+const socket = io();
 
 const getLocation = (options) => {
     return new Promise((resolve, reject) => {

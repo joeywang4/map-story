@@ -28,7 +28,9 @@ db.once('open', () => {
 
 // Socket connection
 io.on('connection', socket => {
-    socket.on('disconnect', () => {});
+    const id = Math.floor(Math.random()*100);
+    console.log(`User${id} connected!`);
+    socket.on('disconnect', () => {console.log(`User${id} disconnected!`)});
 })
 
 // Session
